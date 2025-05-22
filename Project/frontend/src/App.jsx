@@ -69,7 +69,7 @@ function App() {
             <Route path="/carrinho" element={<CarrinhoPage />} />
             <Route path="/servicos" element={<ServicesPage />} />
             <Route path="/contato" element={<div className="container" style={{minHeight: "80vh", padding: "4rem 1rem"}}>Página de Contato</div>} />
-            <Route path="/perfil" element={<ProfilePage /> } />
+            <Route path="/perfil" element={<ProfilePage />} />
           </Routes>
         </Router>
       </AnimationProvider>
