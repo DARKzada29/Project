@@ -19,7 +19,7 @@ const HeroSection = styled.section`
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url('/src/assets/hero-bg.jpg') center/cover no-repeat;
+                url('/src/assets/mechanic-hero.jpg') center/cover no-repeat;
     z-index: -1;
   }
   
@@ -254,7 +254,7 @@ const AboutFeatureItem = styled(motion.li)`
 const CTASection = styled.section`
   padding: 5rem 0;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
-              url('/src/assets/cta-bg.jpg') center/cover no-repeat;
+              url('/src/assets/mechanic-workshop.jpg') center/cover no-repeat;
   text-align: center;
 `;
 
@@ -364,7 +364,7 @@ const HomePage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            Mecânica <span>JK</span> - Excelência em Serviços Automotivos
+            JK <span>Mecânica</span> - Excelência em Serviços Automotivos
           </HeroTitle>
           <HeroSubtitle
             initial={{ opacity: 0 }}
@@ -374,6 +374,8 @@ const HomePage = () => {
             Oferecemos serviços de alta qualidade para manter seu veículo em perfeitas condições. Confie em quem entende do assunto.
           </HeroSubtitle>
           <HeroButton
+            as={Link}
+            to="/orcamento"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             initial={{ opacity: 0 }}
@@ -386,7 +388,7 @@ const HomePage = () => {
       </HeroSection>
       
       <ServicesSection>
-        <SectionTitle>Nossos Principais <span>Serviços</span></SectionTitle>
+        <SectionTitle>Nossos <span>Serviços</span></SectionTitle>
         <ServicesGrid>
           <ServiceCard
             whileHover={{ y: -10 }}
@@ -455,7 +457,7 @@ const HomePage = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <img src="/src/assets/about.jpg" alt="Mecânica Jk" />
+            <img src="/src/assets/mechanic-team.jpg" alt="JK Mecânica" />
           </AboutImage>
           
           <AboutContent>
@@ -465,7 +467,7 @@ const HomePage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Por que escolher a <span>Mecânica JK</span>?
+              Por que escolher a <span>JK Mecânica</span>?
             </AboutTitle>
             
             <AboutDescription
@@ -474,7 +476,7 @@ const HomePage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Com mais de 1 anos de experiência no mercado, a Mecânica JK se destaca pela qualidade dos serviços e pelo compromisso com a satisfação dos clientes. Utilizamos peças originais e contamos com profissionais altamente qualificados.
+              Com mais de 15 anos de experiência no mercado, a JK Mecânica se destaca pela qualidade dos serviços e pelo compromisso com a satisfação dos clientes. Utilizamos peças originais e contamos com profissionais altamente qualificados.
             </AboutDescription>
             
             <AboutFeatures
@@ -499,6 +501,8 @@ const HomePage = () => {
             </AboutFeatures>
             
             <HeroButton
+              as={Link}
+              to="/servicos"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0 }}
@@ -506,7 +510,7 @@ const HomePage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              Conheça Nossa Equipe
+              Conheça Nossos Serviços
             </HeroButton>
           </AboutContent>
         </AboutContainer>
@@ -529,7 +533,7 @@ const HomePage = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Solicite um orçamento online e receba uma estimativa do valor do serviço. Tenha acesso a preços exclusivos.
+            Solicite um orçamento online e receba uma estimativa detalhada para o serviço que seu veículo precisa. Nossos especialistas estão prontos para ajudar.
           </CTADescription>
           
           <CTAButtons>
@@ -548,7 +552,7 @@ const HomePage = () => {
             
             <CTASecondaryButton
               as={Link}
-              to="/contato"
+              to="/servicos"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0 }}
@@ -556,7 +560,7 @@ const HomePage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              Fale Conosco
+              Ver Serviços
             </CTASecondaryButton>
           </CTAButtons>
         </CTAContainer>
