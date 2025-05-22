@@ -386,7 +386,7 @@ const Header = () => {
           {isAuthenticated() ? (
             <>
               <NavItem whileHover="hover" variants={navItemVariants}>
-                <Link to="/perfil" onClick={toggleMenu}>
+                <Link to="/Carrinho" onClick={toggleMenu}>
                   <FaUser /> Meu Perfil
                 </Link>
               </NavItem>
