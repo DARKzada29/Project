@@ -305,11 +305,6 @@ const Header = () => {
               <FaWrench /> Orçamento
             </Link>
           </NavItem>
-          <NavItem whileHover="hover" variants={navItemVariants}>
-            <Link to="/contato">
-              <FaPhone /> Contato
-            </Link>
-          </NavItem>
         </NavLinks>
         
         <ActionButtons>
@@ -387,17 +382,7 @@ const Header = () => {
               <FaWrench /> Orçamento
             </Link>
           </NavItem>
-          <NavItem whileHover="hover" variants={navItemVariants}>
-            <Link to="/carrinho" onClick={toggleMenu}>
-              <FaShoppingCart /> Carrinho
-            </Link>
-          </NavItem>
-          <NavItem whileHover="hover" variants={navItemVariants}>
-            <Link to="/contato" onClick={toggleMenu}>
-              <FaPhone /> Contato
-            </Link>
-          </NavItem>
-          
+        
           {isAuthenticated() ? (
             <>
               <NavItem whileHover="hover" variants={navItemVariants}>
