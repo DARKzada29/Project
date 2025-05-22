@@ -9,6 +9,7 @@ import ServicesPage from './pages/ServicesPage';
 import GlobalStyles from './styles/GlobalStyles';
 import { AnimationProvider } from './context/AnimationContext';
 import { AuthProvider } from './context/AuthContext';
+import CarrinhoPage from './pages/ProfilePage';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
